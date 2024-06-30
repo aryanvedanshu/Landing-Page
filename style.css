@@ -1,0 +1,202 @@
+body {
+    background-color: black;
+    color: white;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.header-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+}
+
+.header-title {
+    font-size: 4em;
+    font-family: 'GodofThunder', sans-serif; /* Change this to an electric font */
+}
+
+.page-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 60vh;
+    background-color: white;
+    color: black;
+    padding: 20px;
+}
+
+.welcome-note {
+    width: 50%;
+    padding: 20px;
+}
+
+.image-frame {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.image-frame img {
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    transition: opacity 0.3s ease;
+}
+
+.hover-img {
+    opacity: 0;
+}
+
+body:hover .hover-img {
+    opacity: 1;
+}
+
+body:hover .default-img {
+    opacity: 0;
+}
+
+.projects-heading {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    width: 100%;
+}
+
+.project-item {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid transparent;
+}
+
+.project-item h5 {
+    margin: 0;
+}
+
+.project-item .project-description {
+    display: none;
+    margin-top: 10px;
+    color: #333;
+}
+
+.project-item:hover {
+    background-color: #f0f0f0;
+    border-color: #ccc;
+}
+
+.project-item:hover .project-description {
+    display: block;
+}
+
+.project-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.contact-heading {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.contact-form {
+    width: 50%;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-control:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.tail-container {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.tail-container h2 {
+    font-size: 2em;
+}
+
+.tail-container ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.tail-container li {
+    margin: 10px 0;
+}
+
+.tail-container a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.tail-container a:hover {
+    text-decoration: underline;
+}
+
+#canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+/* Load a custom font for the electric effect (optional) */
+@font-face {
+    font-family: 'ElectricFont';
+    src: url('path/to/electric-font.woff2') format('woff2'),
+         url('path/to/electric-font.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}

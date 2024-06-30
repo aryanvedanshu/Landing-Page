@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing Page</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="header-container">
+      <h1 class="header-title">Aryan Goel</h1>
+    </div>
+
+    <div class="page-container" id="page1">
+      <div class="welcome-note">
+        <h2>Welcome!</h2>
+        <p>
+          Feel free to explore and learn more about what I do as a Full Stack
+          Developer and AI Engineer.
+        </p>
+      </div>
+      <div class="image-frame">
+        <img
+          src="https://buffer.com/library/content/images/size/w1200/2023/10/free-images.jpg"
+          alt="First Image"
+          class="default-img"
+        />
+        <img
+          src="https://img-cdn.pixlr.com/image-generator/history/65bb506dcb310754719cf81f/ede935de-1138-4f66-8ed7-44bd16efc709/medium.webp"
+          alt="Second Image"
+          class="hover-img"
+        />
+      </div>
+    </div>
+
+    <div class="page-container" id="page2">
+      <h3 class="projects-heading">My Projects</h3>
+      <div class="projects-grid">
+        <div class="project-item">
+          <h5>AI Chatbot</h5>
+          <p class="project-description">
+            An AI-powered chatbot that provides human-like responses to user
+            queries.
+          </p>
+        </div>
+        <div class="project-item">
+          <h5>Project A</h5>
+          <p class="project-description">A brief description of Project A.</p>
+        </div>
+        <div class="project-item">
+          <h5>Project B</h5>
+          <p class="project-description">A brief description of Project B.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="page-container" id="page3">
+      <h3 class="contact-heading">Contact Me</h3>
+      <div class="contact-form">
+        <div class="form-group">
+          <label for="subject">Subject:</label>
+          <input
+            type="text"
+            class="form-control"
+            id="subject"
+            placeholder="Write your subject"
+          />
+        </div>
+        <div class="form-group">
+          <label for="query">Query:</label>
+          <textarea
+            class="form-control"
+            id="query"
+            rows="5"
+            placeholder="Write your query in detail"
+          ></textarea>
+        </div>
+        <div class="form-group">
+          <label>Send via:</label><br />
+          <input type="radio" id="whatsapp" name="send-via" value="whatsapp" />
+          <label for="whatsapp">WhatsApp</label><br />
+          <input
+            type="radio"
+            id="phone-text"
+            name="send-via"
+            value="phone-text"
+          />
+          <label for="phone-text">Phone Text</label><br />
+          <input type="radio" id="gmail" name="send-via" value="gmail" />
+          <label for="gmail">Gmail</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Send</button>
+      </div>
+    </div>
+
+    <div class="tail-container">
+      <h2>Contact Me</h2>
+      <ul>
+        <li>
+          <a href="https://linkedin.com/in/aryangoel" target="_blank"
+            >Find me on LinkedIn</a
+          >
+        </li>
+        <li>
+          <a href="https://github.com/aryangoel" target="_blank"
+            >Find me on GitHub</a
+          >
+        </li>
+        <li>
+          <a href="https://instagram.com/aryangoel" target="_blank"
+            >Find me on Instagram</a
+          >
+        </li>
+        <li><a href="projects.html">Look at my projects</a></li>
+        <li>
+          <a href="mailto:aryan.goel@example.com"
+            >Contact me for projects and more</a
+          >
+        </li>
+      </ul>
+    </div>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+  </body>
+</html>
